@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Dev — Meshpoint Systems</title>
+  <meta name="description" content="Dev landing page for Meshpoint Systems — links to projects, docs, and repos." />
+  <link rel="canonical" href="https://dev.meshpointsystems.com/" />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Dev — Meshpoint Systems" />
+  <meta property="og:description" content="Dev landing page for Meshpoint Systems — links to projects, docs, and repos." />
+  <meta property="og:url" content="https://dev.meshpointsystems.com/" />
+  <meta property="og:image" content="https://www.meshpointsystems.com/images/og-image.png" />
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Dev — Meshpoint Systems" />
+  <meta name="twitter:description" content="Dev landing page for Meshpoint Systems — links to projects, docs, and repos." />
+  <meta name="twitter:image" content="https://www.meshpointsystems.com/images/og-image.png" />
+
+  <style>
+    :root{--bg:#0f1720;--card:#0b1220;--accent:#00bcd4;--muted:#9aa4b2}
+    html,body{height:100%;margin:0;font-family:system-ui,-apple-system,Segoe UI,Roboto,"Helvetica Neue",Arial;color:#e6eef4;background:linear-gradient(180deg,#08111a 0%, #071424 100%)}
+    .wrap{min-height:100%;display:flex;align-items:center;justify-content:center;padding:3rem}
+    .card{max-width:900px;width:100%;background:rgba(255,255,255,0.02);padding:2rem;border-radius:12px;box-shadow:0 6px 30px rgba(2,6,23,0.6)}
+    h1{margin:0 0 .5rem;font-size:1.75rem}
+    p.lead{margin:0 0 1.25rem;color:var(--muted)}
+    .links{display:flex;flex-wrap:wrap;gap:.75rem}
+    .btn{background:var(--accent);color:#052028;padding:.6rem .95rem;border-radius:8px;text-decoration:none;font-weight:600}
+    footer{margin-top:1.25rem;color:var(--muted);display:flex;justify-content:space-between;align-items:center;font-size:.9rem}
+    .social{display:flex;gap:.5rem}
+    a.social-link{color:var(--muted);text-decoration:none}
+    @media(max-width:600px){.card{padding:1rem}}
+  </style>
+</head>
+<body>
+  <main class="wrap">
+    <section class="card" role="main">
+      <h1>Dev — Meshpoint Systems</h1>
+      <p class="lead">A simple landing page linking to projects, docs, and repositories for development work.</p>
+
+      <div class="links">
+        <a class="btn" href="https://www.meshpointsystems.com" target="_blank" rel="noopener">Main site</a>
+        <a class="btn" href="https://github.com/jasethepeople" target="_blank" rel="noopener">GitHub</a>
+      </div>
+
+      <footer>
+        <div>© <span id="year"></span> Meshpoint Systems</div>
+        <div class="social">
+          <a class="social-link" href="https://github.com/jasethepeople" aria-label="GitHub" target="_blank" rel="noopener">GitHub</a>
+        </div>
+      </footer>
+    </section>
+  </main>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
